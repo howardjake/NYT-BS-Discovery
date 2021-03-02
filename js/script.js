@@ -1,8 +1,6 @@
-let namesData, recoData, idx, currentList;
-
-
-// $('form
-').on('submit', handler)
+let BASE_URL, namesData, recoData, idx, currentList;
+let listIndex = []
+// $('form').on('submit', handler)
 const API_KEY = `api-key=#`
 
 $.ajax({
@@ -10,34 +8,35 @@ $.ajax({
 }).then(
     (data) => {
         namesData = data.results
+        console.log(namesData)
         namesData.forEach(function(element, index) {
-            $(`select`).append(`<option id=${'name'+index}>${element.display_name}</option>`)
-        });     
+            listIndex.push(element.list_name_encoded);
+            $(`select`).append(`<option id=${'name'+index}>${element.display_name}</option>`);
+            
+            
+        });  
+        idx = 0
+        BASE_URL = `https://api.nytimes.com/svc/books/v3/lists/current/`+listIndex[idx]+`.json?` 
+        handler();  
     }
-    )
+)
     
-idx = 0
+
+
 
 console.log(idx)
+
 $('#list-name').change(function () {
     $('select option:selected').each(function () {
         idx = $(this).index()
         currentList = namesData
-    });
-    
+        BASE_URL = `https://api.nytimes.com/svc/books/v3/lists/current/`+listIndex[idx]+`.json?`
+        console.log(idx)
+        handler();
+    });    
 })
+
 .change()
-
-// $.ajax({
-//     url: `https://api.nytimes.com/svc/books/v3/lists/current/${namesData[index].list_name_encoded}.json${API_KEY}`
-// }).then (
-//     (data) => {
-//         console.log(data)
-//     },
-// )
-
-
-// let BASE_URL = `https://api.nytimes.com/svc/books/v3/lists/{date}/${currentList}.json?`
 
 
 function handler (evt) {
@@ -45,10 +44,19 @@ function handler (evt) {
         url: `${BASE_URL}${API_KEY}`
     }).then(
         (data) => {
-            console.log(recoData);
+            let currentList = data.results.books
+            console.log(data);
+            $('ol').html('');
+            currentList.forEach(function(element, index) {
+                $('ol').append(`<hr><li><h4>${element.title}</h4><p>by ${element.author}</p><img src="${element.book_image}"></li><hr>`)
+            });
         },
         (error) => {
             console.log(`failure to request!`);
         }
     )
 } 
+
+function render() {
+    
+}
