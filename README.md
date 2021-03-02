@@ -12,7 +12,7 @@ A web-based app that displays the NYT Bestsellers lists.
 
 ##  Wirframes 
 
-![wireframe v1](./img/wireframe v1.png)
+![wireframev1](./img/wireframev1.png)
 
 ## Future 
 
