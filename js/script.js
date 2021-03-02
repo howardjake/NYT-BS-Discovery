@@ -1,6 +1,6 @@
 let BASE_URL, namesData, recoData, idx, currentList;
 let listIndex = []
-const API_KEY = `api-key=o9yKiaBtmcAU6APdCXJGOIKI42GxGHGy`
+const API_KEY = `api-key=#`
 
 $.ajax({
     url: `https://api.nytimes.com/svc/books/v3/lists/names.json?${API_KEY}`
@@ -47,7 +47,8 @@ function handler (evt) {
             console.log(data);
             $('ol').html('');
             currentList.forEach(function(element, index) {
-                $('ol').append(`<hr><li><h4>${element.title}</h4><p>by ${element.author}</p><img src="${element.book_image}"></li><hr>`)
+                $('ol').append(`<div id="list-item"><div id="img-box"><img src="${element.book_image}" id="image"></div>
+                <div id="info"><h4>${element.rank}) ${element.title}</h4><p>by ${element.author}</p><p id="description">${element.description}</p></div>`)
             });
         },
         (error) => {
