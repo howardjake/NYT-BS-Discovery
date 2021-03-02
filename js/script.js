@@ -1,7 +1,6 @@
 let BASE_URL, namesData, recoData, idx, currentList;
 let listIndex = []
-// $('form').on('submit', handler)
-const API_KEY = `api-key=#`
+const API_KEY = `api-key=o9yKiaBtmcAU6APdCXJGOIKI42GxGHGy`
 
 $.ajax({
     url: `https://api.nytimes.com/svc/books/v3/lists/names.json?${API_KEY}`
