@@ -8,7 +8,7 @@ A web-based app that displays the NYT Bestsellers lists.
 - JS
 - jQuery
 - [NYT Books API](https://developer.nytimes.com/docs/books-product/1/overview/)
-- Github Pages (for deployment)
+- Vercel (for deployment)
 
 ##  Wirframes 
 
