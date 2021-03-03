@@ -34,8 +34,9 @@ A web-based app that displays the NYT Bestsellers lists.
 
 ## Getting Started 
 
-[Click here](https://nyt-bs-explorer.vercel.app/)
+[Click here](https://nyt-bs-explorer.vercel.app/) to open up the app and explore.
 
 ## Future 
 
 - Enable a date function so users can go back and see past lists
+- Make a loading screen to wait for AJAX responds
