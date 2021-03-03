@@ -32,7 +32,7 @@ $('#list-name').change(function () {
     });    
 });
 
-// makes a request and prints the list data to the page 
+// makes a new request and prints the list data to the page 
 function handler (evt) {
     $.ajax({
         url: `${BASE_URL}${API_KEY}`
