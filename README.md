@@ -38,5 +38,5 @@ A web-based app that displays the NYT Bestsellers lists.
 
 ## Future 
 
-- Enable a date function so users can go back and see past lists
-- Make a loading screen to wait for AJAX responds
+- Enable a date function so users can go back and see past lists.
+- Make a loading screen to wait for AJAX response.
