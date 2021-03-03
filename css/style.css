@@ -2,49 +2,261 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "Chomsky";
+    src: local(./font/Chomsky.otf);
+}
+
+html {
+    background-image: url(https://images.unsplash.com/photo-1587302301133-7a3aa8bbce87?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    background-attachment: fixed;
+}
+
+header {
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+p {
+    font-size: .9vw;
+    margin: 2px;
+}
+
+hr {
+    margin: .020vw;
+}
+select.form-select {
+    font-size: 1vw;
+    padding: 0.5vw;
+    width: auto;
+    margin: 1vw;
+    width: 60%;
+}
 
 body {
+    margin: 0vw 2vw;
+    padding: 20px;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(240, 230, 140, 0);
+    background-image: linear-gradient(rgb(245, 245, 245), rgba(255, 255, 255, 0.678));
+}
+
+h1 {
+    font-size: 4vw;
+    color: rgb(0, 0, 0);
+    font-family: 'Suez One', serif;
+    padding: 10px;
+    height: auto;
+    
 }
 
 ol {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
-    margin: 20px 40px;
+    margin: auto;
     padding: 0;
+    
 }
 
 #list-item {
-    border: 3px solid black;
+    border-radius: 3px;
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr;
-    align-items: center;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 0fr 1fr;
+    align-items: start;
     justify-content: center;
-    /* padding: 10px; */
-    width: auto%;
-    height: 18vw;
+    width: auto;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 14px 29px 0px rgba(0,0,0,0.32);
 }
+
+#ranking {
+    text-align: left;
+    grid-column: 1/3;
+    padding: 0 1vw;
+    margin: 0;
+    background-color: rgba(71, 71, 71, 0.664);
+    border-radius: 3px 3px 0 0;
+    color: seashell;
+    font-size: 1.75vw;
+}
+
 #info{
     text-align: left;
     width: 100%;
-    font-size: 1vw;
-    width:
+    font-size: .9vw;
+    padding: .9vw;
+    height: auto;
 }
-h4 {
-    font-size: 1.5vw;
-}
+
 #img-box {
     display: flex;
-    padding: 0,5vw;
+    padding: 1vw;
     justify-content: center;
     align-items: center;
-    width: inherit;
+    width: 10vw;
     height: auto;
-    margin: 10px;
+    margin: 0; 
 }
-img {
-    width: 100%;
-    height: auto%;
+
+img#book_image {
+    border: 1px double #A4A4A4;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0;
+    box-shadow: 5px 14px 29px 0px rgba(0,0,0,0.32);
 }
+
+@media only screen and (max-width: 1200px) {
+     #logo {
+        width: 40%;
+     }
+
+    select.form-select {
+        font-size: 2vw;
+        padding: 1vw;
+        margin: 10px;
+        width: 97%;
+    }
+
+    body {
+          margin: 0;
+      }
+
+    ol {
+        grid-template-columns: 1fr 1fr;
+        margin: 0px 10px;
+        grid-gap: 10px;
+    }
+
+    #list-item {
+        border-radius: 0px;
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        grid-template-rows: 0fr 1fr;
+        align-items: start;
+        justify-content: center;
+        width: auto;
+        height: auto;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 5px 14px 29px 0px rgba(0,0,0,0.32);
+    }
+
+    #img-box {
+        display: flex;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: auto;
+        margin: auto; 
+    }
+
+    img#book_image {
+        max-width: 90%;
+        height: auto;
+        text-align: center;
+        box-shadow: 5px 14px 29px 0px rgba(0,0,0,0.42);
+    }
+
+    p {
+        font-size: 2vw;
+        margin:  0 2vw 0 0;
+    }
+
+    #info{
+        text-align: left;
+        width: 90%;
+        font-size: 1.5vw;
+        padding: 1vw;
+        margin: 1vw 0;
+        height: auto;
+        align-self: start;
+    }
+  }
+
+@media only screen and (max-width: 675px) {
+    h1 {
+        font-size: 4vw;
+        margin: 10px 20px;
+    }
+
+    select.form-select {
+        font-size: 4.5vw;
+        padding: 0;
+        margin: 4vw 1vw;
+        width: 98%;
+    }
+
+    body {
+          margin: 0 auto;
+          padding: 0;
+    }
+
+    ol {
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        padding: 0;
+        grid-gap: 5px;
+    }
+
+    #list-item {
+        border-radius: 0px;
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        grid-template-rows: 0fr 1fr;
+        align-items: start;
+        justify-content: center;
+        width: auto;
+        height: auto;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 5px 14px 29px 0px rgba(0,0,0,0.32);
+    }
+
+    #img-box {
+        display: flex;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: auto;
+        margin: 3vw; 
+    }
+
+    img#book_image {
+        max-width: 100%;
+        height: auto;
+        text-align: center;
+        box-shadow: 5px 14px 29px 0px rgba(0,0,0,0.42);
+    }
+
+    p {
+        font-size: 3.5vw;
+        margin:  0 2vw 0 0;
+    }
+
+    #info{
+        text-align: left;
+        width: 100%;
+        font-size: 3vw;
+        padding: 0;
+        margin: 0;
+        height: auto;
+        align-self: start;
+    }
+    
+    #ranking {
+        padding: 0 3vw;
+        font-size: 5vw;
+    }
+  }
