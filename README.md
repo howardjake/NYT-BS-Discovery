@@ -1,6 +1,6 @@
 # NYT
 
-A web-based app that displays the NYT Bestsellers lists.
+A web-based app that displays the New York Times Best Sellers and connects users to the places to buy them.
 
 ## Technologies Used
 - HTML5
