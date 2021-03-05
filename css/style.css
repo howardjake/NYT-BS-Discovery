@@ -18,6 +18,10 @@ header {
     align-items: end;
 }
 
+label {
+    font-size: 1vw;
+}
+
 p {
     font-size: .9vw;
     margin: 2px;
@@ -51,7 +55,7 @@ body {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     background-color: rgba(240, 230, 140, 0);
-    background-image: linear-gradient(rgb(245, 245, 245), rgba(255, 255, 255, 0.70));
+    background-image: linear-gradient(ivory, rgba(255, 255, 255, 0.90));
 }
 
 h1 {
@@ -138,7 +142,7 @@ img.book_image {
     box-shadow: 5px 5px 20px 11px rgba(255, 255, 255, 0.99);
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1024px) {
      #logo {
         width: 40%;
      }
@@ -146,12 +150,28 @@ img.book_image {
     select.form-select {
         font-size: 2vw;
         padding: 1vw;
-        margin: 10px;
         width: 95%;
+    }
+    
+    label {
+        font-size: 1.5vw;
+    }
+    .list-item {
+        border-radius: 3px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 0fr 1fr;
+        align-items: start;
+        justify-content: center;
+        width: auto;
+        height: auto;
+        background-color: rgb(255, 255, 255);
+        transition: ease-out background-color 0.5s;
     }
 
     body {
-          margin: 0;
+        background-color:ivory;
+        margin: 0;
       }
 
     ol {
@@ -160,24 +180,11 @@ img.book_image {
         grid-gap: 10px;
     }
 
-    #list-item {
-        border-radius: 0px;
-        display: grid;
-        grid-template-columns: 1fr 1.5fr;
-        grid-template-rows: 0fr 1fr;
-        align-items: start;
-        justify-content: center;
-        width: auto;
-        height: auto;
-        background-color: rgb(255, 255, 255);
-        box-shadow: 5px 14px 29px 0px rgba(0,0,0,0.32);
-    }
-
-    #img-box {
+    .img-box {
         display: flex;
         padding: 0;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         width: 90%;
         height: auto;
         margin: auto; 
@@ -217,10 +224,14 @@ img.book_image {
         grid-template-columns: 1fr 1fr;
     }
 
+    label {
+        font-size: 3vw;
+    }
+
     select.form-select {
         font-size: 4.5vw;
         padding: 0;
-        margin: 4vw 1vw;
+        margin: 0 0 10px;
         width: 98%;
     }
 
@@ -236,20 +247,7 @@ img.book_image {
         grid-gap: 5px;
     }
 
-    #list-item {
-        border-radius: 0px;
-        display: grid;
-        grid-template-columns: 1fr 1.5fr;
-        grid-template-rows: 0fr 1fr;
-        align-items: start;
-        justify-content: center;
-        width: auto;
-        height: auto;
-        background-color: rgb(255, 255, 255);
-        box-shadow: 5px 14px 29px 0px rgba(0,0,0,0.32);
-    }
-
-    #img-box {
+    .img-box {
         display: flex;
         padding: 0;
         justify-content: center;
@@ -260,7 +258,7 @@ img.book_image {
     }
 
     img#book_image {
-        max-width: 100%;
+
         height: auto;
         text-align: center;
         box-shadow: 5px 14px 29px 0px rgba(0,0,0,0.42);
