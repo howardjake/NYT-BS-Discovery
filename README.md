@@ -17,7 +17,7 @@ A basic web application where users can explore the New York Times Best Sellers 
 
 ### Pictures
 
-Each book has a card that display's rank and more info about the title.
+Each book has a card that displays rank and more information about the title.
 
 ![Card-Layout](./img/card-layout.png)
 
