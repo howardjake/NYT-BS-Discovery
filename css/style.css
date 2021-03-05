@@ -183,7 +183,7 @@ img.book_image {
 
     .img-box {
         display: flex;
-        padding: 0;
+        padding: 1vw;
         justify-content: center;
         align-items: flex-start;
         width: 90%;
@@ -212,6 +212,20 @@ img.book_image {
         height: auto;
         align-self: start;
     }
+  }
+
+  @media only screen and (max-width: 724px) {
+    #over {
+        padding: 1vw;
+        border: 5px thick rgb(245, 232, 204);
+    }
+    
+    #card {
+        /* transition: ease-out background-color 0.5s; */
+        background-color: rgba(255, 255, 255, 1);
+        box-shadow: 5px 14px 29px 0px rgba(0,0,0,0.32);
+    }
+
   }
 
 @media only screen and (max-width: 600px) {
