@@ -213,7 +213,7 @@ img.book_image {
     }
   }
 
-@media only screen and (max-width: 675px) {
+@media only screen and (max-width: 600px) {
     h1 {
         font-size: 4vw;
         margin: 10px 20px;
