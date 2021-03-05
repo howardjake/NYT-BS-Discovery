@@ -156,10 +156,11 @@ img.book_image {
     label {
         font-size: 1.5vw;
     }
+
     .list-item {
         border-radius: 3px;
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 0fr 1fr;
         align-items: start;
         justify-content: center;
@@ -198,8 +199,8 @@ img.book_image {
     }
 
     p {
-        font-size: 2vw;
-        margin:  0 2vw 0 0;
+        font-size: 1.5vw;
+        margin:  0 0 0 0;
     }
 
     #info{
@@ -228,6 +229,19 @@ img.book_image {
         font-size: 3vw;
     }
 
+    .list-item {
+        border-radius: 3px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 0fr 1fr;
+        align-items: start;
+        justify-content: center;
+        width: auto;
+        height: auto;
+        background-color: rgb(255, 255, 255);
+        transition: ease-out background-color 0.5s;
+    }
+
     select.form-select {
         font-size: 4.5vw;
         padding: 0;
@@ -249,12 +263,12 @@ img.book_image {
 
     .img-box {
         display: flex;
-        padding: 0;
+        padding: 1vw;
         justify-content: center;
         align-items: center;
         width: auto;
         height: auto;
-        margin: 3vw; 
+        margin: 3.5vw; 
     }
 
     img#book_image {
@@ -266,7 +280,7 @@ img.book_image {
 
     p {
         font-size: 3.5vw;
-        margin:  0 2vw 0 0;
+        margin:  0;
     }
 
     #info{
@@ -274,7 +288,7 @@ img.book_image {
         width: 100%;
         font-size: 3vw;
         padding: 0;
-        margin: 0;
+        margin: 3vw;
         height: auto;
         align-self: start;
     }
