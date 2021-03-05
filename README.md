@@ -1,6 +1,6 @@
 # NYT
 
-A web-based app that displays the NYT Bestsellers lists.
+A web-based app that displays the New York Times Best Sellers and connects users to the places to buy them.
 
 ## Technologies Used
 - HTML5
@@ -11,7 +11,6 @@ A web-based app that displays the NYT Bestsellers lists.
 - Vercel (for deployment)
 
 ##  Wireframe
-
 ![wireframev1](./img/wireframev1.png)
 
 ## Pictures
@@ -34,4 +33,13 @@ A web-based app that displays the NYT Bestsellers lists.
 
 ## Getting Started 
 
+<<<<<<< HEAD
 [Click here](https://nyt-bs-explorer.vercel.app/)
+=======
+[Click here](https://nyt-bs-explorer.vercel.app/) to open up the app and explore.
+
+## Future 
+
+- Enable a date function so users can go back and see past lists.
+- Make a loading screen to wait for AJAX response.
+>>>>>>> 935cda376eda47ef7551fe8cd9c532f2b467f973
