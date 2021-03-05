@@ -20,7 +20,7 @@
     <title>NYT Best Sellers</title>
 </head>
 <body>
-    <header>
+    <header class="animate__animated animate__fadeIn">
            
         <h1><img src="https://symbols-electrical.getvecta.com/stencil_97/69_the-new-york-times.7e441736da.png" alt="" id="logo"> <br> Best Sellers Explorer</h1>
     
@@ -40,14 +40,17 @@
                 <p for="pub-date">List Publication Date:</p>
             </strong>
             <select class="form-select" aria-label="" id="dates">
-                <!-- options for published dates go here -->
+                <!-- options for publish dates go here -->
             </select>
         </form>
     </div>
-    <div id="cards">
-
+    
+          <br>
         <ol>
     </ol>
+    <div id="cards">
+        <div class="spinner-border m-5" style="width: 3rem; height: 3rem;" role="status" id="loading">
+          </div>
     </div>
               
           <br>
