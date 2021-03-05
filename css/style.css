@@ -287,8 +287,8 @@ img.book_image {
         text-align: left;
         width: 100%;
         font-size: 3vw;
-        padding: 0;
-        margin: 3vw;
+        padding: 3vw;
+        margin: 0;
         height: auto;
         align-self: start;
     }
