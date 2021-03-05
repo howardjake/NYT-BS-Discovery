@@ -1,8 +1,6 @@
 # The New York Times Best Sellers Explorer
 
-Users can explore the New York Times Best Sellers by list and date. The page also connects users to the places to buy them and see reviews.
-
-Click a book cover and you are lead to it's Goodreads page, or click your online store to buy it.
+A basic web application where users can explore the New York Times Best Sellers lists, both current and archived.
 
 ![Post-Style](./img/Post-Styling.png)
 
@@ -23,12 +21,13 @@ Each book has a card that display's rank and more info about the title.
 
 ![Card-Layout](./img/card-layout.png)
 
+- Click the cover or title to visit the corresponding book's Goodreads page.
+- Click a store name to be moved directly to the  product page on the selected website.
+
 ### Mobile Screen
 
-Works on mobile screens just as well as desktop.
-
 ![Mobile](./img/mobile.png)
-
+ - Fully functional on mobile devices.
 ---
 
 # Getting Started 
