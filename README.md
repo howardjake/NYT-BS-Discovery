@@ -10,7 +10,7 @@ A web-based app that displays the NYT Bestsellers lists.
 - [NYT Books API](https://developer.nytimes.com/docs/books-product/1/overview/)
 - Vercel (for deployment)
 
-##  Wireframes 
+##  Wireframe
 
 ![wireframev1](./img/wireframev1.png)
 
@@ -35,7 +35,3 @@ A web-based app that displays the NYT Bestsellers lists.
 ## Getting Started 
 
 [Click here](https://nyt-bs-explorer.vercel.app/)
-
-## Future 
-
-- Enable a date function so users can go back and see past lists
