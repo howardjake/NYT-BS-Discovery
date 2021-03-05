@@ -32,7 +32,7 @@ Each book has a card that displays rank and more information about the title.
 
 # Getting Started 
 
-## [Click here](https://nyt-bs-explorer.vercel.app/) to open up the app and exploring.
+## [Click here](https://nyt-bs-explorer.vercel.app/) to open up the app and start exploring.
 
 ---
 
